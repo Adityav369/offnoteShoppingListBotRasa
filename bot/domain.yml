@@ -1,0 +1,33 @@
+intents:
+  - greet
+  - bye
+  - thanks
+  - show_items
+  - add_items
+  - delete_items
+
+entities:
+  - item
+  - quantity
+
+responses:
+  utter_greet:
+    - text: "Hey! How may I help you? You can ask me to add to your shopping list, show your shopping list and delete items from your list!"
+
+  utter_goodbye:
+    - text: "Bye"
+
+  utter_welcome:
+    - text: "You're Welcome!"
+
+actions:
+  - utter_greet
+  - utter_welcome
+  - utter_goodbye
+  - action_add_item
+  - action_show_list
+  - action_delete_items
+
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true
