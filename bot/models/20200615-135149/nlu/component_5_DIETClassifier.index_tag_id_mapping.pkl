@@ -1,0 +1,1 @@
+{"0": "O", "1": "B--", "10": "I-quantity", "11": "U-quantity", "12": "L-quantity", "2": "I--", "3": "U--", "4": "L--", "5": "B-item", "6": "I-item", "7": "U-item", "8": "L-item", "9": "B-quantity"}

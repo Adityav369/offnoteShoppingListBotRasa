@@ -1,0 +1,245 @@
+// Ways to say hello
+%[greet]('training': '50', 'testing': '50')
+    *[20%] ~[hi]
+    ~[greetings]
+    ~[hi] ~[greetings]
+    ~[hi] ~[whats up]
+    ~[greetings] ~[whats up]
+    ~[hi] ~[greetings] ~[whats up]
+
+~[hi]
+    hi
+    hello
+    hey
+    yo
+    bot
+
+~[greetings]
+    greetings
+    good morning
+    good afternoon
+    good day
+    good night
+    morning
+
+~[whats up]
+    how are you
+    whats up
+    how are you doing
+    how is it going
+    are you there
+    how are things going
+    are you around
+    whatsup
+    sup
+    are you around?
+
+#####################################################################################
+
+// Ways to say goodbye
+%[bye]('training': '50', 'testing': '50')
+    *[20%] ~[bye]
+    ~[thanks] ~[bye]
+    ~[bye] ~[thanks]
+    ~[leaving]
+    ~[leaving] ~[bye]
+
+~[bye]
+    bye
+    goodbye
+    ttyl
+    gtg
+    adios
+    farewell
+    adieu
+    Chao
+    Chau
+
+~[leaving]
+    leaving
+    talk to you soon
+    have to go
+    got to go
+    talk to you later
+    heading out
+    im leaving now
+    going out
+
+~[thanks]
+    thanks
+    thank you
+    ty
+    tx
+    cool thanks
+    thank you very much
+
+#################################################################################
+
+# Ways to request a restaurant within a location (using probability operator)
+# NOTE: 60% of the examples should come from the first sentence, and 40% from the second
+
+# Ways to request a restaurant within a location (using probability operator)
+# NOTE: 60% of the examples should come from the first sentence, and 40% from the second
+%[add_items]('training': '100', 'testing': '100')
+    *[5%] ~[hi] ~[please] ~[add] @[item] ~[to] ~[my] ~[list]
+    *[5%] ~[hi] ~[please] ~[add] @[quantity] @[item] ~[to] ~[my] ~[list]
+    *[10%] ~[hi] ~[add]  @[quantity] @[item] ~[to] ~[my] ~[list]
+    *[10%] ~[hi] ~[add] @[item] ~[to] ~[my] ~[list]
+    *[10%] ~[hi] ~[add] @[item] ~[to] ~[list]
+    *[15%] ~[add] @[item] ~[to] ~[my] ~[list]
+    *[15%] ~[add] @[item] ~[to] ~[list]
+    *[15%] ~[add] @[quantity] @[item] ~[to] ~[my] ~[list]
+    *[15%] ~[add] @[quantity] @[item] ~[to] ~[list]
+
+@[item]
+    ~[apples]
+    ~[bananas]
+    ~[pens]
+    ~[pencils]
+
+@[quantity]
+    ~[1]
+    ~[2]
+    ~[3]
+    ~[6]
+
+~[to]
+    to
+    in
+
+~[my]
+    the
+    my
+
+~[list]
+    shopping list
+    shopping bag
+    list
+    shopping cart
+    bag
+    cart
+
+~[hi]
+    hi
+    hello
+    hey
+    yo
+    bot
+
+~[please]
+    please
+    plz
+    pls
+
+~[add]
+    put
+    add    
+
+############################################################################
+
+%[show_items]('training': '100', 'testing': '100')
+    *[10%] ~[hi] ~[please] ~[show] ~[my] ~[list]
+    *[10%] ~[hi] ~[show] ~[my] ~[list]
+    *[10%] ~[show]~[my] ~[list]
+    *[20%] ~[show] ~[list]
+    *[40%] ~[show] ~[to] ~[list]
+    *[10%] ~[please] ~[show?] ~[my] ~[list]
+
+~[my]
+    the
+    my
+
+~[list]
+    shopping list
+    shopping bag
+    list
+    shopping cart
+    bag
+    cart
+
+~[hi]
+    hi
+    hello
+    hey
+    yo
+    bot
+
+~[please]
+    please
+    plz
+    pls
+
+~[show]
+    give
+    show
+    fetch
+    display
+    get  
+
+###############################################################################
+
+
+# Ways to request a restaurant within a location (using probability operator)
+# NOTE: 60% of the examples should come from the first sentence, and 40% from the second
+
+# Ways to request a restaurant within a location (using probability operator)
+# NOTE: 60% of the examples should come from the first sentence, and 40% from the second
+%[delete_items]('training': '100', 'testing': '100')
+    *[10%] ~[hi] ~[please] ~[remove] @[item] ~[from] ~[my] ~[list]
+    *[20%] ~[hi] ~[remove] @[item] ~[from] ~[my] ~[list]
+    *[10%] ~[hi] ~[remove] @[item] ~[from] ~[list]
+    *[30%] ~[remove] @[item] ~[from] ~[my] ~[list]
+    *[30%] ~[remove] @[item] ~[from] ~[list]
+
+@[item]
+    ~[apples]
+    ~[bananas]
+    ~[pens]
+    ~[pencils]
+
+~[from]
+    to
+    in
+
+~[my]
+    the
+    my
+
+~[list]
+    shopping list
+    shopping bag
+    list
+    shopping cart
+    bag
+    cart
+
+~[hi]
+    hi
+    hello
+    hey
+    yo
+    bot
+
+~[please]
+    please
+    plz
+    pls
+
+~[remove]
+    delete
+    remove 
+
+##################################################################################
+
+%[thanks]('training': '50', 'testing': '50')
+    ~[thanks]
+
+~[thanks]
+    thanks
+    thank you
+    ty
+    tx
+    cool thanks
+    thank you very much
+
+#####################################################################################

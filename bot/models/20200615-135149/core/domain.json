@@ -1,0 +1,27 @@
+{
+  "states": [
+    "intent_add_items",
+    "intent_bye",
+    "intent_delete_items",
+    "intent_greet",
+    "intent_show_items",
+    "intent_thanks",
+    "entity_item",
+    "entity_quantity",
+    "prev_action_listen",
+    "prev_action_restart",
+    "prev_action_session_start",
+    "prev_action_default_fallback",
+    "prev_action_deactivate_form",
+    "prev_action_revert_fallback_events",
+    "prev_action_default_ask_affirmation",
+    "prev_action_default_ask_rephrase",
+    "prev_action_back",
+    "prev_action_add_item",
+    "prev_action_delete_items",
+    "prev_action_show_list",
+    "prev_utter_goodbye",
+    "prev_utter_greet",
+    "prev_utter_welcome"
+  ]
+}
