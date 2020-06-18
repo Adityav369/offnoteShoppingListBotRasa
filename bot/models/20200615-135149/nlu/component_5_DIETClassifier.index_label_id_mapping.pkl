@@ -1,1 +1,0 @@
-{"0": "add_items", "1": "bye", "2": "delete_items", "3": "greet", "4": "show_items", "5": "thanks"}
